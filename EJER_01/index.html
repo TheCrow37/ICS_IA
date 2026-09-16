@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASA — Hamburguesería de autor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+  <div class="nav-inner">
+    <div class="logo">BRASA</div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
+    <nav class="links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">La carta</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <svg class="hero-grid" viewBox="0 0 800 400" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="grate" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="60" stroke="currentColor" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="400" fill="url(#grate)" color="var(--text)"/>
+  </svg>
+  <div class="hero-content">
+    <div class="eyebrow">Hamburguesería de autor</div>
+    <h1>BRASA</h1>
+    <p class="tagline">Carne madurada, brasa lenta e ingredientes de temporada. Una hamburguesa, hecha como un plato de verdad.</p>
+    <div class="cta-row">
+      <a href="#menu" class="btn btn-primary">Ver la carta</a>
+      <a href="#contacto" class="btn btn-ghost">Reservar mesa</a>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>La carta</h2>
+      <p class="note">Todo se prepara al momento sobre brasa de encina.</p>
+    </div>
+
+    <div class="menu-category">
+      <h3>Hamburguesas</h3>
+
+      <div class="menu-item">
+        <div class="menu-item-wrap">
+          <div style="display:flex; align-items:baseline; gap:10px;">
+            <span class="item-name">La Original</span>
+            <span class="item-leader"></span>
+            <span class="item-price">12,50€</span>
+          </div>
+          <span class="item-desc">Ternera madurada, cheddar curado, cebolla confitada, salsa de la casa.</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-wrap">
+          <div style="display:flex; align-items:baseline; gap:10px;">
+            <span class="item-name">Trufa Negra</span>
+            <span class="item-leader"></span>
+            <span class="item-price">15,90€</span>
+          </div>
+          <span class="item-desc">Ternera, mahonesa de trufa, rúcula, virutas de parmesano.</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-wrap">
+          <div style="display:flex; align-items:baseline; gap:10px;">
+            <span class="item-name">Cabra y Miel</span>
+            <span class="item-leader"></span>
+            <span class="item-price">14,50€</span>
+          </div>
+          <span class="item-desc">Queso de cabra, miel de romero, nueces caramelizadas, rúcula.</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-wrap">
+          <div style="display:flex; align-items:baseline; gap:10px;">
+            <span class="item-name">Blue Ember</span>
+            <span class="item-leader"></span>
+            <span class="item-price">14,90€</span>
+          </div>
+          <span class="item-desc">Queso azul, bacon ahumado, cebolla crujiente, salsa barbacoa casera.</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-item-wrap">
+          <div style="display:flex; align-items:baseline; gap:10px;">
+            <span class="item-name">La Vegetal</span>
+            <span class="item-leader"></span>
+            <span class="item-price">13,50€</span>
+          </div>
+          <span class="item-desc">Remolacha y garbanzo a la brasa, aguacate, tomate seco, hummus.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Acompañamientos</h3>
+      <div class="menu-item">
+        <div style="display:flex; align-items:baseline; gap:10px; width:100%;">
+          <span class="item-name">Patatas trufadas</span>
+          <span class="item-leader"></span>
+          <span class="item-price">5,50€</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div style="display:flex; align-items:baseline; gap:10px; width:100%;">
+          <span class="item-name">Aros de cebolla crujientes</span>
+          <span class="item-leader"></span>
+          <span class="item-price">5,00€</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div style="display:flex; align-items:baseline; gap:10px; width:100%;">
+          <span class="item-name">Ensalada de temporada</span>
+          <span class="item-leader"></span>
+          <span class="item-price">6,00€</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Bebidas</h3>
+      <div class="menu-item">
+        <div style="display:flex; align-items:baseline; gap:10px; width:100%;">
+          <span class="item-name">Cerveza artesana</span>
+          <span class="item-leader"></span>
+          <span class="item-price">4,50€</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div style="display:flex; align-items:baseline; gap:10px; width:100%;">
+          <span class="item-name">Limonada de romero</span>
+          <span class="item-leader"></span>
+          <span class="item-price">3,80€</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div style="display:flex; align-items:baseline; gap:10px; width:100%;">
+          <span class="item-name">Vino tinto de la casa (copa)</span>
+          <span class="item-leader"></span>
+          <span class="item-price">4,20€</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Visítanos</h2>
+      <p class="note">Reservas recomendadas los fines de semana.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="info-block">
+          <div class="info-label">Dirección</div>
+          <div class="info-value">Calle Uría, 12 · 33003 Oviedo, Asturias</div>
+        </div>
+        <div class="info-block">
+          <div class="info-label">Horario</div>
+          <div class="info-value">Martes a domingo, 13:00–16:00 y 20:00–23:30<br>Lunes cerrado</div>
+        </div>
+        <div class="info-block">
+          <div class="info-label">Teléfono</div>
+          <div class="info-value"><a href="tel:+34985123456">985 12 34 56</a></div>
+        </div>
+        <div class="info-block">
+          <div class="info-label">Correo</div>
+          <div class="info-value"><a href="mailto:hola@brasaburger.es">hola@brasaburger.es</a></div>
+        </div>
+      </div>
+
+      <div class="reserve-card">
+        <h3>¿Mesa para hoy?</h3>
+        <p>Llámanos o escríbenos y te confirmamos la reserva en el momento.</p>
+        <a href="tel:+34985123456" class="btn btn-primary">Llamar ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">BRASA · Hamburguesería de autor · Oviedo</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
