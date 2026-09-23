@@ -1,4 +1,4 @@
-  :root {
+ :root {
     --bg: #1C1815;
     --bg-alt: #241E1A;
     --bg-raised: #2C2420;
@@ -234,6 +234,41 @@
   }
 
   #menu { background: var(--bg-alt); }
+
+  /* ---------- PILARES (tarjetas) ---------- */
+  .pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 720px) {
+    .pilares-grid { grid-template-columns: 1fr; }
+  }
+  .pilar-card {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    padding: 32px 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .pilar-card:hover, .pilar-card:focus-visible {
+    transform: translateY(-4px);
+    border-left-color: var(--deep);
+  }
+  .pilar-icon {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+  .pilar-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .pilar-card p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin: 0;
+  }
 
   /* ---------- MENU ---------- */
   .menu-category {
